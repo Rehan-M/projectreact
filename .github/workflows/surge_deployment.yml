@@ -1,5 +1,5 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# C For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: React App Deploy to Surge
 
@@ -34,4 +34,4 @@ jobs:
         run: npm install --global surge
 
       - name: Deploy to Surge
-        run: surge ./build projectreact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build reactproject1.surge.sh --token ${{ secrets.SURGE_TOKEN }}
